@@ -23,18 +23,6 @@ return array(
                 
                 'may_terminate' => true,
                 'child_routes' => array(
-
-                    'default' => array(
-                        'type'    => 'Segment',
-                        'options' => array(
-                            'route'    => '/[:controller[/:id]]',
-                            'constraints' => array(
-                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                            ),
-                            'defaults' => array(
-                            ),
-                        ),
-                    ),
                     
                     'client' => array(
                         'type'    => 'Segment',
