@@ -38,7 +38,6 @@ class SampleClientController extends AbstractActionController
                 $data = array('name'=>'ikhsan');
                 $adapter = $client->getAdapter();
                 
-                $adapter->setOptions(CURLOPT_HEADER, 0);
                 $adapter->connect('localhost', 80);
                 $uri = $client->getUri().'?id=1';
                 // send with PUT Method
@@ -57,7 +56,7 @@ class SampleClientController extends AbstractActionController
                 
                 $adapter->connect('localhost', 80);
                 $uri = $client->getUri().'?id=1'; //send parameter id = 1
-                // send with PUT Method
+                // send with DELETE Method
                 $adapter->write('DELETE', new \Zend\Uri\Uri($uri), 1.1, array());
                 
                 $responsecurl = $adapter->read();
