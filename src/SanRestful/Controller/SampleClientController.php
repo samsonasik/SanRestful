@@ -1,11 +1,4 @@
 <?php
-/**
- * Zend Framework (http://framework.zend.com/)
- *
- * @link      http://github.com/samsonasik/SanRestful for the canonical source repository
- * @copyright Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   http://framework.zend.com/license/new-bsd New BSD License
- */
 
 namespace SanRestful\Controller;
 
@@ -87,18 +80,3 @@ class SampleClientController extends AbstractActionController
         return $response;
     }
 }
-
-// i hate stackoverflow moderator, do not hate the answer of users :p
-//http://stackoverflow.com/questions/1691530/sending-a-file-via-http-put-in-php 
-
-
-/*                $data = array('name'=>'ikhsan');
-                $ch = curl_init($client->getUri().'?id=1');
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");
-                curl_setopt($ch, CURLOPT_POSTFIELDS,http_build_query($data));
-                
-                $response = curl_exec($ch);
-                echo $response;
-                break;
-                */
