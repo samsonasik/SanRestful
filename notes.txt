@@ -1,0 +1,14 @@
+// i hate stackoverflow moderator, do not hate the answer of users :p
+//http://stackoverflow.com/questions/1691530/sending-a-file-via-http-put-in-php 
+
+
+/*                $data = array('name'=>'ikhsan');
+                $ch = curl_init($client->getUri().'?id=1');
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");
+                curl_setopt($ch, CURLOPT_POSTFIELDS,http_build_query($data));
+                
+                $response = curl_exec($ch);
+                echo $response;
+                break;
+                */
