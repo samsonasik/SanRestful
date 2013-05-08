@@ -18,10 +18,10 @@ class SampleClientController extends AbstractActionController
         switch($method) {
             case 'get' :
                 $client->setMethod('GET');
+                $client->setParameterGET(array('id'=>1));
                 break;
             case 'get-list' :
                 $client->setMethod('GET');
-                $client->setParameterGET(array('id'=>1));
                 break;
             case 'create' :
                 $client->setMethod('POST');
